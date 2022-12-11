@@ -2313,6 +2313,24 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
 }
 
+.banner-content h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.banner-content h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .banner-content h1 span {
   font-weight: 700;
 }
