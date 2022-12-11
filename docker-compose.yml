@@ -1,0 +1,31 @@
+version: '2'
+services:
+  ro-web:
+    container_name: ro-web
+    hostname: LIVENESS
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+        JAR_FILE: ro-web.jar
+        PRJ_NAME: ro-web
+    volumes:
+#      - ./res/apps/ro-web/config:/apps/ro-web/config
+      - ./logs:/apps/ro-web/logs
+    ports:
+      - 8080:8080
+    networks:
+      liveness:
+        ipv4_address: 172.168.2.2
+    restart: on-failure
+
+
+networks:
+  liveness:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet:  172.168.2.0/24
+          gateway: 172.168.2.1
+
