@@ -11,16 +11,16 @@
 	</parent>
 
 	<groupId>com.exp</groupId>
-	<artifactId>naturally-ro-website</artifactId>
+	<artifactId>ro-website</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<name>naturally-ro-website</name>
+	<name>ro-website</name>
 	<description>仙境 RO 传说: 随缘仙境主站</description>
-	<url>https://github.com/lyy289065406/naturally-ro-website</url>
+	<url>https://github.com/Casual-Ragnarok/ro-website</url>
 
 	<scm>
-		<connection>scm:git:https://github.com/lyy289065406/naturally-ro-website.git</connection>
-		<developerConnection>scm:git:https://github.com/lyy289065406/naturally-ro-website.git</developerConnection>
-		<url>https://github.com/lyy289065406/naturally-ro-website</url>
+		<connection>scm:git:https://github.com/Casual-Ragnarok/ro-website.git</connection>
+		<developerConnection>scm:git:https://github.com/Casual-Ragnarok/ro-website.git</developerConnection>
+		<url>https://github.com/Casual-Ragnarok/ro-website</url>
 		<tag>HEAD</tag>
 	</scm>
 	
