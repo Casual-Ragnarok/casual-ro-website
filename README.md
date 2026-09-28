@@ -7,10 +7,10 @@
 
 | 入口 | 地址 | 唯一维护位置 |
 | --- | --- | --- |
-| 脚本商城 | https://store.casualro.top/ | hexo-store |
-| NPC 脚本索引 | https://npc.casualro.top/ | hexo-store 商品 README、tpl/summary/html；生成后部署到 ro-npcs |
-| 文档与工具资料 | https://docs.casualro.top/ | ro-docs/docs/index.html |
-| 客户端补丁 | https://grf.casualro.top/ | cro-patch-grf/index.html |
+| 脚本商城 | https://store.casualro.top/ | [hexo-store](https://github.com/Casual-Ragnarok/hexo-store) |
+| NPC 脚本索引 | https://npc.casualro.top/ | [hexo-store](https://github.com/Casual-Ragnarok/hexo-store)（商品 README 与生成模板）；生成后部署到 [ro-npcs](https://github.com/EHakker/ro-npcs) |
+| 文档与工具资料 | https://docs.casualro.top/ | [ro-docs](https://github.com/Casual-Ragnarok/ro-docs) |
+| 客户端补丁 | https://grf.casualro.top/ | [cro-patch-grf](https://github.com/Casual-Ragnarok/cro-patch-grf) |
 
 分站使用与首页一致的樱花主题，各自携带静态资源。其维护说明见各仓库 CASUALRO_THEME.md。
 玩家中心和自助工具暂为“准备中”。首页不提供登录或支付接口。
