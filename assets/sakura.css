@@ -27,3 +27,12 @@ body footer a:hover,body .cro-community-footer a:hover{color:#803857!important}
 .opening-dialog h2{font-size:21px;line-height:1.6;margin:12px 0 24px}
 .opening-dialog .button{cursor:pointer;min-width:120px}
 .opening-dialog .button:focus-visible{outline:2px solid #a45379;outline-offset:4px}
+
+/* Promotional video: load the external player only on request. */
+.promo{display:grid;grid-template-columns:1fr 1.8fr;gap:36px;align-items:center;margin:32px 0;padding:30px;border:1px solid #f0dfe5;border-radius:24px;background:#fff9fb}
+.promo-copy h2{font-size:27px;line-height:1.5;color:#795367;margin:12px 0}.promo-copy h2 span{color:#c3688b}.promo-copy>p:not(.eyebrow){font-size:14px;line-height:1.9;color:#887383}.promo-copy small{font-size:11px;color:#a08597}
+.promo-screen{aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:transparent}.promo-play{display:block;position:relative;width:100%;height:100%;border:0;padding:0;cursor:pointer;background:transparent}.promo-play img{width:100%;height:100%;object-fit:cover;filter:saturate(.8) brightness(1.06)}.promo-play::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#fff9fb 0%,#fff9fb99 9%,transparent 30%,transparent 86%,#fff9fb 100%),linear-gradient(180deg,#fff9fb 0%,transparent 20%,transparent 68%,#fff9fb 100%)}.promo-play-label{position:absolute;z-index:1;inset:auto 0 0;display:flex;justify-content:center;align-items:center;gap:12px;padding:28px 12px 20px;color:#795367;font-size:15px;font-weight:600;text-shadow:0 1px 3px #fff9fb}.promo-play-label>span{display:grid;place-items:center;width:42px;height:42px;border:1px solid #ffffffaa;border-radius:50%;background:#b9567bcc;color:#fff;text-shadow:none}.promo-screen iframe{display:block;width:100%;height:100%;border:0}
+.promo-sources{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 12px}.promo-sources button{border:1px solid #eed6e1;border-radius:18px;padding:6px 12px;background:#fffdfc;color:#927383;font-size:12px;cursor:pointer}.promo-sources button[aria-pressed=true]{background:#f8e7ef;color:#a45379}.promo-external{font-size:12px;color:#a45379}.promo button:focus-visible,.promo a:focus-visible{outline:2px solid #a45379;outline-offset:-3px}
+@media(max-width:750px){.promo{grid-template-columns:1fr;gap:20px;padding:20px}.promo-copy h2{font-size:24px}.promo-copy h2 br{display:none}}
+
+.promo-fallback{height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:16px;padding:24px;text-align:center;color:#795367}.promo-fallback small{color:#927383}
