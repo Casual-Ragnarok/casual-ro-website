@@ -34,7 +34,9 @@ node tools/build.mjs
 相对资源路径支持 GitHub Pages 仓库子路径部署。
 .github/workflows/pages.yml 在推送 master 时部署，支持手动触发；Pull Request 只检查和构建。
 首次发布在 Settings → Pages 将 Source 设置为 GitHub Actions。
-未设置 CNAME，首页域名确定后再配置，并更新三个分站导航中的首页地址。
+首页主域名为 https://casualro.top/，CNAME 随构建复制到 dist/。
+仓库 Pages 的 Custom domain 应设为 casualro.top，Source 选择 GitHub Actions。
+www.casualro.top 可配置 CNAME 指向 Casual-Ragnarok.github.io，作为备用入口。
 
 ## 素材与许可
 
