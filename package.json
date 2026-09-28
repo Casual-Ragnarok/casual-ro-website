@@ -1,0 +1,14 @@
+{
+  "name": "casual-ro-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "随缘仙境樱花萌系静态门户",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node tools/serve.mjs",
+    "check": "node --check assets/site.js && node tools/check.mjs",
+    "build": "node tools/build.mjs"
+  }
+}
