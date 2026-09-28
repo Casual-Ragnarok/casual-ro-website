@@ -4,7 +4,7 @@ const nav = [['home','首页','index.html'],['npcs','NPC 索引','https://npc.ca
 document.querySelector('#header').innerHTML = `<a class="skip" href="#main">跳到主要内容</a><div class="nav-wrap"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">✿</span><span>随缘仙境<small>CASUAL RAGNAROK</small></span></a><nav aria-label="主导航">${nav.map(([id,name,url])=>`<a href="${url}" ${id===page?'aria-current="page"':''} ${id==='store'?'target="_blank" rel="noopener noreferrer"':''}>${name}</a>`).join('')}</nav><span class="nav-note" aria-hidden="true">♡ Have a lovely adventure</span></div>`;
 document.querySelector('#footer').innerHTML = '<span>✿ 随缘仙境 · Casual Ragnarok Online</span><span>愿每一次传送，都通往喜欢的地方。 ♡</span>';
 const main = document.querySelector('#main');
-  main.innerHTML = `<section class="hero"><div class="hero-art"><img src="assets/hero-sakura.png" alt="樱花盛开的普隆德拉式城镇，初心者与服事和粉色波利、天使波利一起迎接冒险"><span class="art-label">A LITTLE MAGIC, A LOT OF LOVE ♡</span></div><div class="hero-copy"><p class="hero-stamp">✿ 欢迎来到随缘仙境</p><p class="eyebrow">YOUR LITTLE RAGNAROK WORLD</p><h1>今天，也要和波利<br><em>一起冒险呀。</em></h1><p class="lead">从普隆德拉的微风，到下一次奇妙相遇。<br>收好行囊，把喜欢的仙境，慢慢变成日常。</p><div class="actions"><a class="button" href="https://grf.casualro.top/">领取冒险补给 <span>↗</span></a><a class="button secondary" href="https://npc.casualro.top/">发现 NPC 脚本 <span>♡</span></a></div><p class="hero-caption"><span>✧</span> 游戏 · 创作 · 分享，让热爱在这里发芽。</p></div></section>
+  main.innerHTML = `<section class="hero"><div class="hero-art"><img src="assets/hero-sakura.png" alt="樱花盛开的普隆德拉式城镇，初心者与服事和粉色波利、天使波利一起迎接冒险"><span class="art-label">A LITTLE MAGIC, A LOT OF LOVE ♡</span></div><div class="hero-copy"><p class="hero-stamp">✿ 欢迎来到随缘仙境</p><p class="eyebrow">YOUR LITTLE RAGNAROK WORLD</p><h1>今天，也要和波利<br><em>一起冒险呀。</em></h1><p class="lead">从普隆德拉的微风，到下一次奇妙相遇。<br>收好行囊，把喜欢的仙境，慢慢变成日常。</p><div class="actions"><button class="button" type="button" data-opening-notice>下载游戏 <span aria-hidden="true">↓</span></button><button class="button secondary" type="button" data-opening-notice>注册/登录 <span aria-hidden="true">♡</span></button><button class="button secondary" type="button" data-opening-notice>领取冒险礼包 <span aria-hidden="true">✧</span></button></div><p class="hero-caption"><span>✧</span> 游戏 · 创作 · 分享，让热爱在这里发芽。</p></div></section>
   <div class="welcome-strip"><span>✉ 卡普拉的小小指引</span><p>来找脚本、查资料，还是为下一次冒险做准备？你的目的地都在这里。</p><span aria-hidden="true">✧</span></div>
   <div class="section-head"><div><p class="eyebrow">CHOOSE YOUR NEXT ADVENTURE</p><h2>下一站，去哪里？ <span class="heading-flower" aria-hidden="true">✿</span></h2></div><span>为冒险者和创作者准备的小小传送站</span></div><section class="cards" aria-label="站点入口">
   ${[
@@ -14,4 +14,17 @@ const main = document.querySelector('#main');
     ['04 / PLAY','客户端补丁','查看必装资源和可选外观，确认加载顺序，获取 GRF 补丁。','https://grf.casualro.top/','查看补丁'],
     ['05 / CREATE','自助工具','道具信息与翻译工具，帮助服主和创作者处理日常工作。',null,'准备中'],
     ['06 / ACCOUNT','玩家中心','计划提供账户、角色与玩家服务的统一入口。',null,'准备中']
-  ].map(([num,title,desc,url,label],index)=>`<article class="card card-${index}"><div class="card-top"><span class="card-number">${num}</span><span class="card-illustration" aria-hidden="true">${index<3?`<img src="assets/${['npc-shop','npc-adventure','npc-guide'][index]}.png" alt="">`:['','','','✧','⚗','♡'][index]}</span></div><h3>${title}</h3><p>${desc}</p>${url?`<a class="card-link" href="${url}" ${url.startsWith('https')?'target="_blank" rel="noopener noreferrer"':''}>${label} <span>→</span></a>`:`<span class="tag">${label}</span>`}</article>`).join('')}</section><div class="home-signoff"><span aria-hidden="true">✧ ♡ ✧</span><p>不必急着成为英雄，<br>在仙境里，做快乐的自己就好。</p><small>WITH LOVE, CASUALRO</small></div>`;
+  ].map(([num,title,desc,url,label],index)=>`<article class="card card-${index}"><div class="card-top"><span class="card-number">${num}</span><span class="card-illustration" aria-hidden="true">${index<3?`<img src="assets/${['npc-shop','npc-adventure','npc-guide'][index]}.png" alt="">`:['','','','✧','⚗','♡'][index]}</span></div><h3>${url?`<a class="resource-title-link" href="${url}" ${url.startsWith('https')?'target="_blank" rel="noopener noreferrer"':''}>${title}</a>`:title}</h3><p>${desc}</p>${url?`<a class="card-link" href="${url}" ${url.startsWith('https')?'target="_blank" rel="noopener noreferrer"':''}>${label} <span>→</span></a>`:`<span class="tag">${label}</span>`}</article>`).join('')}</section><div class="home-signoff"><span aria-hidden="true">✧ ♡ ✧</span><p>不必急着成为英雄，<br>在仙境里，做快乐的自己就好。</p><small>WITH LOVE, CASUALRO</small></div>`;
+
+const openingDialog = document.createElement('dialog');
+openingDialog.className = 'opening-dialog';
+openingDialog.setAttribute('aria-labelledby', 'opening-message');
+openingDialog.innerHTML = '<span class="opening-flower" aria-hidden="true">✿</span><h2 id="opening-message">暂未开服，敬请期待</h2><form method="dialog"><button class="button" autofocus>知道啦</button></form>';
+document.body.append(openingDialog);
+document.querySelectorAll('[data-opening-notice]').forEach(button => {
+  button.addEventListener('click', () => openingDialog.showModal());
+});
+openingDialog.addEventListener('click', event => {
+  const bounds = openingDialog.getBoundingClientRect();
+  if (event.target === openingDialog && (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom)) openingDialog.close();
+});
