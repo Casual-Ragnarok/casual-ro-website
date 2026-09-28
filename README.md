@@ -8,7 +8,7 @@
 
 | 站点 | 地址 | 维护仓库 |
 | --- | --- | --- |
-| 脚本商城 | [store.casualro.top](https://store.casualro.top/) | [hexo-store](https://github.com/Casual-Ragnarok/hexo-store) |
+| 脚本商城 | [store.casualro.top](https://store.casualro.top/) | [hexo-store](https://github.com/Casual-Ragnarok/hexo-store)，生成后发布至 [ro-store](https://github.com/EHakker/ro-store) |
 | NPC 脚本索引 | [npc.casualro.top](https://npc.casualro.top/) | [hexo-store](https://github.com/Casual-Ragnarok/hexo-store)，生成后发布至 [ro-npcs](https://github.com/EHakker/ro-npcs) |
 | 文档与工具资料 | [docs.casualro.top](https://docs.casualro.top/) | [ro-docs](https://github.com/Casual-Ragnarok/ro-docs) |
 | 客户端补丁 | [grf.casualro.top](https://grf.casualro.top/) | [cro-patch-grf](https://github.com/Casual-Ragnarok/cro-patch-grf) |
@@ -30,6 +30,3 @@ npm run build   # 构建到 dist/
 推送到 `master` 后，GitHub Actions 自动构建并部署至 GitHub Pages，也可手动触发工作流。
 自定义域名为 `casualro.top`，配置见 [CNAME](CNAME)。
 
-## 许可
-
-[Apache-2.0](LICENSE)。第三方素材说明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
