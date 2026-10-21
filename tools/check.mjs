@@ -11,6 +11,6 @@ for (const page of ['index.html']) {
 }
 for (const file of ['hero-sakura.png', 'npc-shop.png', 'npc-guide.png', 'npc-adventure.png']) await access(join(root, 'assets', file));
 const script = await readFile(join(root, 'assets/site.js'), 'utf8');
-for (const host of ['npc.casualro.top', 'docs.casualro.top', 'grf.casualro.top','casual-ragnarok.github.io']) assert(script.includes(`https://${host}/`), `${host}: missing navigation`);
+assert((await readFile(join(root,'index.html'),'utf8')).includes('data-mode="navigation" src="https://repos.casualro.top/shared/site.js"'),'Central navigation missing');
 assert(!/catalog\.json|fetch\(|npcs\.html|docs\.html|downloads\.html/.test(script), 'Homepage must not serve catalog copies');
 console.log('Homepage assets and independent site links are valid.');
